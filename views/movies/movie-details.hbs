@@ -1,0 +1,16 @@
+<div>
+
+    <h2>Detalles de la pelicula</h2>
+    {{#with this.filmDetails}}
+    <h3>Title: {{title}}</h3>
+    <h3>Genre: {{genre}}</h3>
+    <h3>Plot: {{plot}}</h3>
+    {{#each cast}}
+
+    <h3>Name: {{this.name}}</h3>
+    <h3>Occupation: {{this.occupation}}</h3>
+    <h3>catchPhrase: {{this.catchPhrase}}</h3>
+
+    {{/each}}
+    {{/with}}
+</div>
